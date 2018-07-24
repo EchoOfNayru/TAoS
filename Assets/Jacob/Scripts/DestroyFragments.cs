@@ -5,13 +5,20 @@ using UnityEngine;
 public class DestroyFragments : MonoBehaviour {
 
     public float lifetime = 5.0f;
-	
-	void Update () {
+
+    PooledObject pool;
+
+    void Start()
+    {
+        pool = GetComponent<PooledObject>();
+    }
+
+    void Update () {
         lifetime -= Time.deltaTime;
 
         if (lifetime <= 0.0f)
         {
-            Destroy(gameObject);
+            pool.returnToPool();   
         }
 	}
 }

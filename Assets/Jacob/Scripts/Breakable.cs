@@ -9,9 +9,13 @@ public class Breakable : MonoBehaviour {
 
     Rigidbody rb;
 
+    GameObject HammerPool;
+    ObjectPool pool;
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
+        HammerPool = GameObject.FindGameObjectWithTag("HammerPool");
+        pool = HammerPool.GetComponent<ObjectPool>();
 	}
 	
 	// Update is called once per frame
@@ -31,7 +35,9 @@ public class Breakable : MonoBehaviour {
     {
         if (gameObject.tag == "Hammer")
         {
-            GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
+            GameObject pieces = pool.getObject();/*Instantiate(remains, transform.position, transform.rotation);*/
+            pieces.transform.position = transform.position;
+            pieces.transform.rotation = transform.rotation;
             Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
 
             foreach (var piece in piecesRBs)
