@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour {
             transform.position = new Vector3(transform.position.x + speed, transform.position.y, transform.position.z);
             legs.LR = 2;
         }
-        transform.position = new Vector3(transform.position.x, 0.3f, transform.position.z);
+        transform.position = new Vector3(transform.position.x, 0.9f, transform.position.z);
         cam.transform.position = new Vector3(transform.position.x, 10, transform.position.z);
         CamShake();
 
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour {
             direction = hit.point - transform.position;
         }
 
-        legs.transform.position = new Vector3(transform.position.x, transform.position.y - .55f, transform.position.z);
+        legs.transform.position = new Vector3(transform.position.x, 0.4f, transform.position.z);
         legs.PointLegs(legs.LR, legs.UD);
     }
 
