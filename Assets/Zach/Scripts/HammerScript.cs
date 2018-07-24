@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HammerScript : MonoBehaviour {
 
-    public float maxHeight;
+    public float maxHeight = 1.1f;
 
 	void Update () {
         if (transform.position.y >= maxHeight)
