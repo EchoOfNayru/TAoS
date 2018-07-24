@@ -41,6 +41,7 @@ public class Breakable : MonoBehaviour {
     {
         if (gameObject.tag == "Hammer")
         {
+            gameObject.GetComponent<MeshCollider>().enabled = false;
             GameObject pieces = pool.getObject();/*Instantiate(remains, transform.position, transform.rotation);*/
             pieces.transform.position = transform.position;
             pieces.transform.rotation = transform.rotation;
@@ -52,12 +53,13 @@ public class Breakable : MonoBehaviour {
             }
 
             // destroy the unbroken object
-            Destroy(gameObject);
+            Destroy(transform.root.gameObject);
         }
 
-        else if ((collision.gameObject.tag == "Hammer" || collision.gameObject.tag == "HammerFragment")
+        else if (collision.collider.gameObject.tag == "Hammer" /*|| collision.collider.gameObject.tag == "HammerFragment")*/
                   && hasSSpawned == false)
         {
+            gameObject.GetComponent<MeshCollider>().enabled = false;
             hasSSpawned = true;
             GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
             Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
@@ -66,9 +68,8 @@ public class Breakable : MonoBehaviour {
             {
                 piece.velocity = currentSpeed;
             }
-
             // destroy the unbroken object
-            Destroy(gameObject);
+            Destroy(transform.root.gameObject);
             hasSSpawned = false;
         }
     }

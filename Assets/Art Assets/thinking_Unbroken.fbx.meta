@@ -1,52 +1,46 @@
 fileFormatVersion: 2
-guid: 75fe4b775b89cda468044bc88c1f0b55
-timeCreated: 1532466675
+guid: 445f2f59b25af614c81281f80a41a67d
+timeCreated: 1532472435
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCube10
-    100004: pCube11
-    100006: pCube12
-    100008: pCube13
-    100010: pCube13_f_1_
-    100012: polySurface1
-    100014: polySurface2
-    100016: polySurface3
-    100018: polySurface5
-    100020: polySurface6
-    100022: transform1
-    100024: transform2
-    100026: transform3
-    100028: transform4
-    100030: transform5
-    100032: transform6
-    100034: transform7
-    100036: transform8
-    400000: //RootNode
-    400002: pCube10
-    400004: pCube11
-    400006: pCube12
-    400008: pCube13
-    400010: pCube13_f_1_
-    400012: polySurface1
-    400014: polySurface2
-    400016: polySurface3
-    400018: polySurface5
-    400020: polySurface6
-    400022: transform1
-    400024: transform2
-    400026: transform3
-    400028: transform4
-    400030: transform5
-    400032: transform6
-    400034: transform7
-    400036: transform8
-    2100000: lambert1
-    2300000: pCube13_f_1_
-    3300000: pCube13_f_1_
-    4300000: pCube13_f_1_
+    100000: pCube63
+    100002: pCube64
+    100004: pCube65
+    100006: pCube66
+    100008: pCube67
+    100010: pCube68
+    100012: pCube69
+    100014: thinking
+    100016: //RootNode
+    100018: transform168
+    100020: transform169
+    100022: transform170
+    100024: transform171
+    100026: transform172
+    100028: transform173
+    100030: transform174
+    400000: pCube63
+    400002: pCube64
+    400004: pCube65
+    400006: pCube66
+    400008: pCube67
+    400010: pCube68
+    400012: pCube69
+    400014: thinking
+    400016: //RootNode
+    400018: transform168
+    400020: transform169
+    400022: transform170
+    400024: transform171
+    400026: transform172
+    400028: transform173
+    400030: transform174
+    2100000: lambert14
+    2300000: thinking
+    3300000: thinking
+    4300000: thinking
     9500000: //RootNode
   externalObjects: {}
   materials:
