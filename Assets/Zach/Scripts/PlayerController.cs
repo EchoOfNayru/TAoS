@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour {
     public LegController legs;
     public Animator anim;
     int stopYEETing;
+    public float throwCooldownMax = .07f;
+    float throwCooldown;
 
     [Header("Hammer")]
     public GameObject hammerSpawn;
@@ -34,7 +36,7 @@ public class PlayerController : MonoBehaviour {
             anim.SetBool("YEETing", false);
         }
         cam.orthographicSize = camZoom;
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && throwCooldown <= 0 || (power <= 3 && power > 0))
         {
             power += Time.deltaTime * powerScaling;
             if (power > powerMax)
@@ -48,7 +50,7 @@ public class PlayerController : MonoBehaviour {
             shakeDurationSet = temp / 3;
             anim.SetBool("isCharging", true);
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && power > 3)
         {
             Hammer(power);
             anim.SetBool("isCharged", false);
@@ -56,6 +58,7 @@ public class PlayerController : MonoBehaviour {
             anim.SetBool("YEETing", true);
             stopYEETing = 1;
         }
+        throwCooldown -= Time.deltaTime;
     }
 
     void FixedUpdate()
@@ -148,6 +151,7 @@ public class PlayerController : MonoBehaviour {
         power = 0;
         camZoom = camSize;
         shakeDuration = shakeDurationSet;
+        throwCooldown = throwCooldownMax;
     }
 
     void CamShake()
