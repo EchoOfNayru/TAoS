@@ -6,6 +6,7 @@ public class LegController : MonoBehaviour {
 
     public int LR; //Left-Right 0-off   1-left  2-right
     public int UD; //Up-Down    0-off   1-up    2-down
+    public Animator anim;
 
     public void PointLegs(int LR, int UD)
     {
