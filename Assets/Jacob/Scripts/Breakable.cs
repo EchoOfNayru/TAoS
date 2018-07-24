@@ -25,11 +25,19 @@ public class Breakable : MonoBehaviour {
         //    remainsRB.velocity = currentSpeed;
         //    Destroy(gameObject);
         //}
-	}
+    }
 
-    void OnCollisionEnter()
+    void OnCollisionEnter(Collision collision)
     {
-        Instantiate(remains, transform.position, transform.rotation);
+        GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
+        Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
+
+        foreach(var piece in piecesRBs)
+        {
+            piece.velocity = currentSpeed;
+        }
+
+        // destroy the unbroken object
         Destroy(gameObject);
     }
 }
