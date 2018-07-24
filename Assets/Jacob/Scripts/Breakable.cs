@@ -12,6 +12,8 @@ public class Breakable : MonoBehaviour {
     GameObject HammerPool;
     ObjectPool pool;
 
+    bool hasSSpawned = false;
+
 	void Start () {
         rb = GetComponent<Rigidbody>();
 	}
@@ -53,8 +55,10 @@ public class Breakable : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        else if (collision.gameObject.tag == "Hammer" || collision.gameObject.tag == "HammerFragment")
+        else if ((collision.gameObject.tag == "Hammer" || collision.gameObject.tag == "HammerFragment")
+                  && hasSSpawned == false)
         {
+            hasSSpawned = true;
             GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
             Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
 
@@ -65,6 +69,7 @@ public class Breakable : MonoBehaviour {
 
             // destroy the unbroken object
             Destroy(gameObject);
+            hasSSpawned = false;
         }
     }
 }

@@ -52,4 +52,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooledObj: {fileID: 1616812457554930, guid: 5af7e0c77c47a0240b38bd49f26924ea, type: 2}
-  poolAmount: 20
+  poolAmount: 2
