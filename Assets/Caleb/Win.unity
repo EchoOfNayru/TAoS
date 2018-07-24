@@ -478,6 +478,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114605416380730968, guid: 2c0c54b7b184849459444d2a4a4d92c8,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c0c54b7b184849459444d2a4a4d92c8, type: 2}
   m_IsPrefabParent: 0

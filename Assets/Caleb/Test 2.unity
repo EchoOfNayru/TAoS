@@ -900,6 +900,7 @@ MonoBehaviour:
   shakeAmount: 0.7
   decreaseFactor: 1
   legs: {fileID: 492250284}
+  anim: {fileID: 0}
   hammerSpawn: {fileID: 1842808886}
   hammer: {fileID: 1884026212038870, guid: fbf14b4ed94b9eb4caf161ad363dd187, type: 2}
   powerScaling: 15
@@ -1040,6 +1041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LR: 0
   UD: 0
+  anim: {fileID: 0}
 --- !u!23 &492250285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1243,24 +1245,6 @@ Prefab:
     - {fileID: 64507448152483930, guid: 79e0d3c44c2fcfb4da125c88fcf8285e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 79e0d3c44c2fcfb4da125c88fcf8285e, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &647609583 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1268971139441688, guid: 79e0d3c44c2fcfb4da125c88fcf8285e,
-    type: 2}
-  m_PrefabInternal: {fileID: 647609582}
---- !u!114 &647609584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 647609583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7641c6bc2b828664f9cd12d1d1dbb8f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 30
-  total: {fileID: 0}
 --- !u!1001 &723695144
 Prefab:
   m_ObjectHideFlags: 0
@@ -1557,6 +1541,19 @@ GameObject:
   m_PrefabParentObject: {fileID: 1808258507970616, guid: 79e0d3c44c2fcfb4da125c88fcf8285e,
     type: 2}
   m_PrefabInternal: {fileID: 647609582}
+--- !u!114 &910712261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 910712260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7641c6bc2b828664f9cd12d1d1dbb8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 30
+  total: {fileID: 0}
 --- !u!54 &910712263
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1631,17 +1628,17 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a69eb0c10ccbe4d468b82d8526b02ba7, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &916422636 stripped
+--- !u!1 &945238801 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1553555491435448, guid: a69eb0c10ccbe4d468b82d8526b02ba7,
+  m_PrefabParentObject: {fileID: 1568483285330208, guid: a69eb0c10ccbe4d468b82d8526b02ba7,
     type: 2}
   m_PrefabInternal: {fileID: 916422635}
---- !u!114 &916422637
+--- !u!114 &945238802
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 916422636}
+  m_GameObject: {fileID: 945238801}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7641c6bc2b828664f9cd12d1d1dbb8f1, type: 3}
@@ -2648,6 +2645,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 10
   total: {fileID: 0}
+--- !u!1 &1828541255 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1268888131163694, guid: aa205a2ce58e9e04d8916f7db359b8cf,
+    type: 2}
+  m_PrefabInternal: {fileID: 2047670823}
+--- !u!114 &1828541256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1828541255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7641c6bc2b828664f9cd12d1d1dbb8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 5
+  total: {fileID: 0}
 --- !u!1 &1837001103 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 4e9a9207cfddce34c9090c0a7c3c6b94, type: 3}
@@ -2924,24 +2939,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa205a2ce58e9e04d8916f7db359b8cf, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2047670824 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1386598979662034, guid: aa205a2ce58e9e04d8916f7db359b8cf,
-    type: 2}
-  m_PrefabInternal: {fileID: 2047670823}
---- !u!114 &2047670825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2047670824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7641c6bc2b828664f9cd12d1d1dbb8f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 5
-  total: {fileID: 0}
 --- !u!4 &2056259218 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4652955449616442, guid: a69eb0c10ccbe4d468b82d8526b02ba7,
