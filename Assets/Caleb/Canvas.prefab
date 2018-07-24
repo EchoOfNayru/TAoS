@@ -379,7 +379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Health
+  m_Text: Time
 --- !u!114 &114038709017640828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -619,7 +619,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: a7bd58bdfe0af5c4e8342629666f6b22, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -834,9 +834,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 180
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 180
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

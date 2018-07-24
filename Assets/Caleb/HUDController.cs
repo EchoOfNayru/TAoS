@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUDController : MonoBehaviour {
 
@@ -13,7 +14,7 @@ public class HUDController : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        health.value = 1f;
+        health.value = 180;
 	}
 	
 	// Update is called once per frame
@@ -28,6 +29,7 @@ public class HUDController : MonoBehaviour {
         {
             Throw.value = 0;
         }
+        timer();
         gamepause();
         if (PMenu.activeInHierarchy == false)
         {
@@ -41,6 +43,16 @@ public class HUDController : MonoBehaviour {
         {
             Time.timeScale = 0;
             PMenu.SetActive(true);
+        }
+    }
+
+    void timer()
+    {
+        health.value -= Time.deltaTime;
+        
+        if (health.value == 0)
+        {
+            SceneManager.LoadScene("Lose");
         }
     }
 }
