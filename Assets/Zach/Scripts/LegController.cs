@@ -24,7 +24,7 @@ public class LegController : MonoBehaviour {
         }
         if (LR == 2)
         {
-            point.transform.position = new Vector3(transform.position.x - 1, transform.position.y, transform.position.z);
+            point.transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
         }
         if (UD == 1 && LR == 1)
         {
