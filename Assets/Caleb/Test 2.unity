@@ -108,6 +108,11 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &43439638 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: cf043c8cfba014a43990446288b32a8e,
+    type: 3}
+  m_PrefabInternal: {fileID: 1332390999}
 --- !u!1001 &59636803
 Prefab:
   m_ObjectHideFlags: 0
@@ -163,6 +168,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 808adde3e7fe16d4bbdbc20a0c24c216, type: 2}
+    - target: {fileID: 9500000, guid: 36fe5709c15b3d44999004a07ca960c5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f516a3ad26158ec4d9acc65dce57c62c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36fe5709c15b3d44999004a07ca960c5, type: 3}
   m_IsPrefabParent: 0
@@ -503,6 +512,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4099837135273096, guid: aa205a2ce58e9e04d8916f7db359b8cf,
     type: 2}
   m_PrefabInternal: {fileID: 1619667186}
+--- !u!95 &364559323 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 36fe5709c15b3d44999004a07ca960c5,
+    type: 3}
+  m_PrefabInternal: {fileID: 59636803}
 --- !u!1 &367175790
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,7 +914,7 @@ MonoBehaviour:
   shakeAmount: 0.7
   decreaseFactor: 1
   legs: {fileID: 492250284}
-  anim: {fileID: 0}
+  anim: {fileID: 43439638}
   hammerSpawn: {fileID: 1842808886}
   hammer: {fileID: 1884026212038870, guid: fbf14b4ed94b9eb4caf161ad363dd187, type: 2}
   powerScaling: 15
@@ -1041,7 +1055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LR: 0
   UD: 0
-  anim: {fileID: 0}
+  anim: {fileID: 364559323}
 --- !u!23 &492250285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2152,6 +2166,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 808adde3e7fe16d4bbdbc20a0c24c216, type: 2}
+    - target: {fileID: 9500000, guid: cf043c8cfba014a43990446288b32a8e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: af100a747b2977c4cb67c207fd4eafe5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf043c8cfba014a43990446288b32a8e, type: 3}
   m_IsPrefabParent: 0
