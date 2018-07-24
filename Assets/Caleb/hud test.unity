@@ -108,12 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &53821812 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114187504381964146, guid: 5e94842557f0df5439ca39de90238100,
-    type: 2}
-  m_PrefabInternal: {fileID: 1383894882}
-  m_Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &59636803
 Prefab:
   m_ObjectHideFlags: 0
@@ -685,7 +679,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400186, guid: f68bbf9c83e822c4e995d055fb1270e4, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400104, guid: f68bbf9c83e822c4e995d055fb1270e4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -954,6 +948,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114317513078135036, guid: 5e94842557f0df5439ca39de90238100,
+        type: 2}
+      propertyPath: force
+      value: 
+      objectReference: {fileID: 467266397}
     - target: {fileID: 224632133761813678, guid: 5e94842557f0df5439ca39de90238100,
         type: 2}
       propertyPath: m_AnchorMax.y
@@ -969,21 +968,6 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114187504381964146, guid: 5e94842557f0df5439ca39de90238100,
-        type: 2}
-      propertyPath: m_MaxValue
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 114317513078135036, guid: 5e94842557f0df5439ca39de90238100,
-        type: 2}
-      propertyPath: force
-      value: 
-      objectReference: {fileID: 467266397}
-    - target: {fileID: 114317513078135036, guid: 5e94842557f0df5439ca39de90238100,
-        type: 2}
-      propertyPath: Throw
-      value: 
-      objectReference: {fileID: 53821812}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e94842557f0df5439ca39de90238100, type: 2}
   m_IsPrefabParent: 0
