@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: b3502493412a17749ba2a5cb34f28748
+timeCreated: 1532387913
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: flowers_1
+    100002: //RootNode
+    100004: group1
+    100006: group1_pCube11
+    100008: group2
+    100010: group2_pCube11
+    100012: group3
+    100014: group3_pCube11
+    100016: pCube10
+    100018: pCube10 1
+    100020: pCube10 2
+    100022: pCube11
+    100024: pCube11 1
+    100026: pCube11 2
+    100028: pPlane1
+    100030: pPlane1 1
+    100032: pPlane1 2
+    100034: pPlane2
+    100036: pPlane2 1
+    100038: pPlane2 2
+    100040: pPlane3
+    100042: pPlane3 1
+    100044: pPlane3 2
+    100046: pPlane4
+    100048: pPlane4 1
+    100050: pPlane4 2
+    100052: pPlane5
+    100054: pPlane5 1
+    100056: pPlane5 2
+    100058: pPlane6
+    100060: pPlane6 1
+    100062: pPlane6 2
+    100064: pPlane7
+    100066: pPlane7 1
+    100068: pPlane7 2
+    100070: pPlane8
+    100072: pPlane8 1
+    100074: pPlane8 2
+    100076: transform58
+    100078: transform59
+    100080: transform60
+    100082: transform61
+    100084: transform62
+    100086: transform63
+    100088: transform64
+    100090: transform65
+    100092: transform66
+    100094: transform67
+    100096: transform68
+    100098: transform69
+    100100: transform70
+    100102: transform71
+    100104: transform72
+    100106: transform73
+    100108: transform74
+    100110: transform75
+    100112: transform76
+    100114: transform77
+    100116: transform78
+    100118: transform79
+    100120: transform80
+    100122: transform81
+    100124: transform82
+    100126: transform83
+    100128: transform84
+    100130: transform85
+    100132: transform86
+    100134: transform87
+    100136: transform88
+    100138: transform89
+    100140: transform90
+    400000: flowers_1
+    400002: //RootNode
+    400004: group1
+    400006: group1_pCube11
+    400008: group2
+    400010: group2_pCube11
+    400012: group3
+    400014: group3_pCube11
+    400016: pCube10
+    400018: pCube10 1
+    400020: pCube10 2
+    400022: pCube11
+    400024: pCube11 1
+    400026: pCube11 2
+    400028: pPlane1
+    400030: pPlane1 1
+    400032: pPlane1 2
+    400034: pPlane2
+    400036: pPlane2 1
+    400038: pPlane2 2
+    400040: pPlane3
+    400042: pPlane3 1
+    400044: pPlane3 2
+    400046: pPlane4
+    400048: pPlane4 1
+    400050: pPlane4 2
+    400052: pPlane5
+    400054: pPlane5 1
+    400056: pPlane5 2
+    400058: pPlane6
+    400060: pPlane6 1
+    400062: pPlane6 2
+    400064: pPlane7
+    400066: pPlane7 1
+    400068: pPlane7 2
+    400070: pPlane8
+    400072: pPlane8 1
+    400074: pPlane8 2
+    400076: transform58
+    400078: transform59
+    400080: transform60
+    400082: transform61
+    400084: transform62
+    400086: transform63
+    400088: transform64
+    400090: transform65
+    400092: transform66
+    400094: transform67
+    400096: transform68
+    400098: transform69
+    400100: transform70
+    400102: transform71
+    400104: transform72
+    400106: transform73
+    400108: transform74
+    400110: transform75
+    400112: transform76
+    400114: transform77
+    400116: transform78
+    400118: transform79
+    400120: transform80
+    400122: transform81
+    400124: transform82
+    400126: transform83
+    400128: transform84
+    400130: transform85
+    400132: transform86
+    400134: transform87
+    400136: transform88
+    400138: transform89
+    400140: transform90
+    2100000: flower_Texture
+    2300000: flowers_1
+    3300000: flowers_1
+    4300000: flowers_1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
