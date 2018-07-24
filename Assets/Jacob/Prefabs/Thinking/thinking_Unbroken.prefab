@@ -159,7 +159,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4696356596323870}
-  - component: {fileID: 95800810948318390}
   m_Layer: 0
   m_Name: thinking_Unbroken
   m_TagString: Untagged
@@ -536,23 +535,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &95800810948318390
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1545720300046928}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 445f2f59b25af614c81281f80a41a67d, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114558806754983688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -564,7 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d777aa2c8ce8c4b90d11b08ad116c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remains: {fileID: 0}
+  remains: {fileID: 1845142022622316, guid: 7d73cafe94a20794b90feaf9dab43058, type: 2}
 --- !u!135 &135555287160432030
 SphereCollider:
   m_ObjectHideFlags: 1
