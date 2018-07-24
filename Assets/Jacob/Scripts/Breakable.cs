@@ -9,10 +9,20 @@ public class Breakable : MonoBehaviour {
 
     Rigidbody rb;
 
+    GameObject HammerPool;
+    ObjectPool pool;
+
+    bool hasSSpawned = false;
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
 	}
+
+    void Awake()
+    {
+        HammerPool = GameObject.FindGameObjectWithTag("HammerPool");
+        pool = HammerPool.GetComponent<ObjectPool>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,7 +41,9 @@ public class Breakable : MonoBehaviour {
     {
         if (gameObject.tag == "Hammer")
         {
-            GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
+            GameObject pieces = pool.getObject();/*Instantiate(remains, transform.position, transform.rotation);*/
+            pieces.transform.position = transform.position;
+            pieces.transform.rotation = transform.rotation;
             Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
 
             foreach (var piece in piecesRBs)
@@ -43,8 +55,10 @@ public class Breakable : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        else if (collision.gameObject.tag == "Hammer" || collision.gameObject.tag == "HammerFragment")
+        else if ((collision.gameObject.tag == "Hammer" || collision.gameObject.tag == "HammerFragment")
+                  && hasSSpawned == false)
         {
+            hasSSpawned = true;
             GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
             Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
 
@@ -55,6 +69,7 @@ public class Breakable : MonoBehaviour {
 
             // destroy the unbroken object
             Destroy(gameObject);
+            hasSSpawned = false;
         }
     }
 }

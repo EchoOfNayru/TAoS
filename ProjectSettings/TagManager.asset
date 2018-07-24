@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hammer
   - HammerFragment
+  - HammerPool
   layers:
   - Default
   - TransparentFX
