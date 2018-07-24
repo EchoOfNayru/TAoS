@@ -14,9 +14,13 @@ public class Breakable : MonoBehaviour {
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
+	}
+
+    void Awake()
+    {
         HammerPool = GameObject.FindGameObjectWithTag("HammerPool");
         pool = HammerPool.GetComponent<ObjectPool>();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
