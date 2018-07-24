@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour {
     public float shakeAmount;
     public float decreaseFactor;
     public LegController legs;
+    public Animator anim;
+    int stopYEETing;
 
     [Header("Hammer")]
     public GameObject hammerSpawn;
@@ -26,6 +28,11 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
+        if (stopYEETing == 1)
+        {
+            stopYEETing = 0;
+            anim.SetBool("YEETing", false);
+        }
         cam.orthographicSize = camZoom;
         if (Input.GetMouseButton(0))
         {
@@ -33,15 +40,21 @@ public class PlayerController : MonoBehaviour {
             if (power > powerMax)
             {
                 power = powerMax;
+                anim.SetBool("isCharged", true);
             }
             float temp = power / powerMax;
             temp *= 3;
             camZoom = camSize - temp;
             shakeDurationSet = temp / 3;
+            anim.SetBool("isCharging", true);
         }
         if (Input.GetMouseButtonUp(0))
         {
             Hammer(power);
+            anim.SetBool("isCharged", false);
+            anim.SetBool("isCharging", false);
+            anim.SetBool("YEETing", true);
+            stopYEETing = 1;
         }
     }
 
@@ -53,6 +66,7 @@ public class PlayerController : MonoBehaviour {
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + speed);
             legs.UD = 1;
+
         }
         if (Input.GetKey(KeyCode.S))
         {
@@ -68,6 +82,16 @@ public class PlayerController : MonoBehaviour {
         {
             transform.position = new Vector3(transform.position.x + speed, transform.position.y, transform.position.z);
             legs.LR = 2;
+        }
+        if (legs.UD == 0 && legs.LR == 0)
+        {
+            legs.anim.SetBool("isWalking", false);
+            anim.SetBool("isWalking", false);
+        }
+        else
+        {
+            legs.anim.SetBool("isWalking", true);
+            anim.SetBool("isWalking", true);
         }
         transform.position = new Vector3(transform.position.x, 0.9f, transform.position.z);
         cam.transform.position = new Vector3(transform.position.x, 10, transform.position.z);

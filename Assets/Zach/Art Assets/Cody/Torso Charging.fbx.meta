@@ -1,7 +1,5 @@
 fileFormatVersion: 2
-guid: cf043c8cfba014a43990446288b32a8e
-timeCreated: 1532391780
-licenseType: Free
+guid: 4b3fcf41b78d961448cc65bb6a9a51f2
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -10,43 +8,23 @@ ModelImporter:
     100004: elbow_L
     100006: elbow_R
     100008: head
-    100010: pCube10
-    100012: polySurface1
-    100014: polySurface2
-    100016: polySurface3
-    100018: polySurface3 1
-    100020: polySurface4
-    100022: shoulder_L
-    100024: shoulder_R
-    100026: spine
-    100028: //RootNode
-    100030: torso_Root
-    100032: transform11
-    100034: transform12
-    100036: transform13
-    100038: transform14
-    100040: transform15
+    100010: polySurface3
+    100012: shoulder_L
+    100014: shoulder_R
+    100016: spine
+    100018: //RootNode
+    100020: torso_Root
     400000: arm_L
     400002: arm_R
     400004: elbow_L
     400006: elbow_R
     400008: head
-    400010: pCube10
-    400012: polySurface1
-    400014: polySurface2
-    400016: polySurface3
-    400018: polySurface3 1
-    400020: polySurface4
-    400022: shoulder_L
-    400024: shoulder_R
-    400026: spine
-    400028: //RootNode
-    400030: torso_Root
-    400032: transform11
-    400034: transform12
-    400036: transform13
-    400038: transform14
-    400040: transform15
+    400010: polySurface3
+    400012: shoulder_L
+    400014: shoulder_R
+    400016: spine
+    400018: //RootNode
+    400020: torso_Root
     2100000: CODY
     4300000: polySurface3
     7400000: Take 001
@@ -71,6 +49,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
