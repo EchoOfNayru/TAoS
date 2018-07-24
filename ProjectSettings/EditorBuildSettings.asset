@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Caleb/Menu.unity
+    guid: ace4a5eba58b63140a1e5f6ee9525210
+  - enabled: 1
+    path: Assets/Caleb/hud test.unity
+    guid: e8d1aa2e68290a540a0a86a5b74845dd
+  - enabled: 1
+    path: Assets/Caleb/Win.unity
+    guid: 1788c417251be464e875a44c7c578be7
+  - enabled: 1
+    path: Assets/Caleb/Lose.unity
+    guid: 4c5e231b81a9a2a40997537999c5e7c9

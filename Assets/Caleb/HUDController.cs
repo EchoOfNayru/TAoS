@@ -8,6 +8,7 @@ public class HUDController : MonoBehaviour {
     public Slider health;
     public Slider Throw;
     public GameObject PMenu;
+    public PlayerController force;
 
 	// Use this for initialization
 	void Start ()
@@ -18,10 +19,15 @@ public class HUDController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        //if (Input.GetMouseButtonDown(KeyCode.Mouse0) && (Throw.value < 1.0f))
-        // {
+        if (Input.GetMouseButton(0) && (Throw.value < 45.0f))
+        {
+            Throw.value = force.power;
 
-        // }
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            Throw.value = 0;
+        }
         gamepause();
         if (PMenu.activeInHierarchy == false)
         {
