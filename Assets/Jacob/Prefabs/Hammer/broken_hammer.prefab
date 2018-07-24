@@ -95,6 +95,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4443863580885434}
+  - component: {fileID: 114918189061378136}
   m_Layer: 0
   m_Name: broken_hammer
   m_TagString: Untagged
@@ -1069,3 +1070,15 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300018, guid: 05db8ce278a321043ac41a028f57022d, type: 3}
+--- !u!114 &114918189061378136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1616812457554930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616eb7565bb96a5428c27f208cc9eb3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 5
