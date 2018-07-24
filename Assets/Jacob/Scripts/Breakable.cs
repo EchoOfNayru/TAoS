@@ -29,15 +29,32 @@ public class Breakable : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
-        Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
-
-        foreach(var piece in piecesRBs)
+        if (gameObject.tag == "Hammer")
         {
-            piece.velocity = currentSpeed;
+            GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
+            Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
+
+            foreach (var piece in piecesRBs)
+            {
+                piece.velocity = currentSpeed;
+            }
+
+            // destroy the unbroken object
+            Destroy(gameObject);
         }
 
-        // destroy the unbroken object
-        Destroy(gameObject);
+        else if (collision.gameObject.tag == "Hammer" || collision.gameObject.tag == "HammerFragment")
+        {
+            GameObject pieces = Instantiate(remains, transform.position, transform.rotation);
+            Rigidbody[] piecesRBs = pieces.GetComponentsInChildren<Rigidbody>();
+
+            foreach (var piece in piecesRBs)
+            {
+                piece.velocity = currentSpeed;
+            }
+
+            // destroy the unbroken object
+            Destroy(gameObject);
+        }
     }
 }
