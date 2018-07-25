@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: db4af6ee5c82bea4bb2da9d204ee6cb9
+timeCreated: 1532365691
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kenney Rocket
+  fontNames:
+  - Kenney Rocket
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
