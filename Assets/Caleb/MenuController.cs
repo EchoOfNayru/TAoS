@@ -10,7 +10,7 @@ public class MenuController : MonoBehaviour {
 
     public void StartGame()
     {
-        StartCoroutine(DelayLevel("Test 2"));
+        StartCoroutine(DelayLevel("TestScene"));
     }
 
     public void Controls()
