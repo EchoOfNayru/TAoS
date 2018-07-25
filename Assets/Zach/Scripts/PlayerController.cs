@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour {
     int stopYEETing;
     public float throwCooldownMax = .07f;
     float throwCooldown;
+    public AudioSource myAudio;
+    public AudioClip yeet, owat, oof;
 
     [Header("Hammer")]
     public GameObject hammerSpawn;
@@ -52,6 +54,18 @@ public class PlayerController : MonoBehaviour {
         }
         if (Input.GetMouseButtonUp(0) && power > 3)
         {
+            if (power < 15)
+            {
+                myAudio.clip = oof;
+            }
+            if (power > 15)
+            {
+                myAudio.clip = owat;
+            }
+            if (power > 30)
+            {
+                myAudio.clip = yeet;
+            }
             Hammer(power);
             anim.SetBool("isCharged", false);
             anim.SetBool("isCharging", false);
@@ -152,6 +166,7 @@ public class PlayerController : MonoBehaviour {
         camZoom = camSize;
         shakeDuration = shakeDurationSet;
         throwCooldown = throwCooldownMax;
+        myAudio.Play();
     }
 
     void CamShake()
