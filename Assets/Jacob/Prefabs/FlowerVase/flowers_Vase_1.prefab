@@ -744,6 +744,7 @@ GameObject:
   - component: {fileID: 54282377777437734}
   - component: {fileID: 64813738327525290}
   - component: {fileID: 114960475462918934}
+  - component: {fileID: 114128417692858162}
   m_Layer: 0
   m_Name: vase
   m_TagString: Untagged
@@ -1699,7 +1700,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553555491435448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.151411, y: -0.61, z: 8.495687}
+  m_LocalPosition: {x: 35.36167, y: 1.1125605, z: 9.071417}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4444350253215238}
@@ -2216,6 +2217,19 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: d7af10807387aab4e8d3cd406c1f236a, type: 3}
+--- !u!114 &114128417692858162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568483285330208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7641c6bc2b828664f9cd12d1d1dbb8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 100
+  total: {fileID: 0}
 --- !u!114 &114960475462918934
 MonoBehaviour:
   m_ObjectHideFlags: 1
